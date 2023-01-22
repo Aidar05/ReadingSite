@@ -18,7 +18,7 @@ body{
 /* Gradient */
 .background_gradient{
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   background-image: linear-gradient(rgb(240, 91, 53), rgb(255, 238, 82));
   opacity: 0.7;
 	z-index: 0;
@@ -93,7 +93,7 @@ body{
 .learn_button{
 	position: relative;
 	top: 31vh;
-	left: 33vw;
+	left: 36.5vw;
 	color: white;
 	text-transform: uppercase;
 	font-size: 0.8rem;
