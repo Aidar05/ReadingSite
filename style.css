@@ -1,0 +1,116 @@
+/* Сбрасываю стили браузера по дефолту */
+body, div, h1, p, span, button{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+div{
+	color: white;
+}
+
+body{
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Gradient */
+.background_gradient{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgb(240, 91, 53), rgb(255, 238, 82));
+  opacity: 0.7;
+	z-index: 0;
+	position: absolute;
+}
+
+/* The first page */
+.intro{
+	max-width: 80vw;
+	margin: auto;
+}
+
+/* Menu */
+.menu{
+	z-index: 1;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	top: 10px
+}
+
+.menu a{
+	font-size: 0.8rem;
+}
+
+.elements{
+	display: flex;
+	gap: 25px;	
+}
+
+.elements a{
+	text-decoration: none;
+	color: white
+}
+
+.menu_element:hover {
+	color: #fce38a
+}
+
+/* Stuff in intro */
+.template{
+	width: 370px;
+	position: relative;
+	top: 25vh;
+	left: 50%;
+	transform: translateX(-50%);	
+	z-index: 1;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.2rem; 
+}
+
+.intro_welcome{
+	width: 600px;
+	position: relative;
+	top: 27vh;
+	text-transform: uppercase;
+	font-size: 6.4rem;
+	text-align: center;
+	margin: auto;
+	font-weight: 700;
+}
+
+.line{
+	position: relative;
+	width: 40px;
+	height: 1px;
+	background-color: white;
+	top: 29vh;
+	border: none;
+}
+
+.learn_button{
+	position: relative;
+	top: 31vh;
+	left: 33vw;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border: 1.5px solid;
+	border-color: white;
+	background: transparent;
+	height: 30px;
+	width: 125px;
+}
+
+.p2{
+	position: relative;
+	top: 120vh;
+}
+
+.a{
+	width: 50px;
+	height: 50px;
+	color: black;
+}
