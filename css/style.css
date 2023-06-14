@@ -1,0 +1,340 @@
+/* Сбрасываю стили браузера по дефолту */
+body, h1, p, span, button{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body{
+	width: 100vw;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+	--text_color: white;
+	--about_bg_color: rgb(14, 14, 14);
+	--footer_bg_color: black;
+	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
+	--darken_lighten_about_bg: 0, 0, 0, 0.3;
+	--opacity: 0.9;
+	--footer_headings_color: rgb(252, 196, 92);
+}
+
+/* The first page */
+.intro{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:25vh;
+	color: white;
+	background-image: 
+		linear-gradient(
+			rgba(var(--darken_lighten_intro_bg)), 
+			rgba(var(--darken_lighten_intro_bg))
+		),
+		url('../img/bgImg.png');
+	background-repeat: repeat-x;
+ 	user-select: none;
+}
+
+/* Menu */
+.menu{
+	display: flex;
+	justify-content: space-between;
+	width: 80vw;
+	max-width: 90vw;
+	margin-top: 20px;
+}
+
+.elements{
+	display: flex;
+	gap: 25px;	
+}
+
+.elements a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.reg_button{
+	color: white;
+	background: transparent;
+	border: none;
+	padding-right: 10px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.menu_element:hover,
+.reg_button:hover {
+	color: #fce38a
+}
+
+/* Stuff in intro */
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.template{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.2rem; 
+}
+
+.intro_welcome{
+	text-transform: uppercase;
+	font-size: 4.8rem;
+	font-weight: 700;
+}
+
+.line{
+	width: 40px;
+	height: 1px;
+	background-color: white;
+	border: none;
+}
+
+.learn_button{
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border: 1.5px solid;
+	border-color: white;
+	background: transparent;
+	height: 30px;
+	width: 125px;
+}
+
+.learn_button:hover{
+	opacity: 0.6;
+}
+
+.a{
+	width: 50px;
+	height: 50px;
+	color: black;
+}
+
+/* Про нас */
+.about_container{
+	width: 100vw;
+	height: 150vh;
+	background-image: 
+		linear-gradient(
+			rgba(var(--darken_lighten_about_bg)), 
+			rgba(var(--darken_lighten_about_bg))
+		),
+		url('../img/bg_3.jpg');
+	background-attachment: fixed;	
+	display: flex;
+	justify-content: center;
+}
+
+.about_page{
+	background-color: var(--about_bg_color);
+	color: var(--text_color);
+	width: 60vw;
+	height: 150vh;
+	opacity: var(--opacity);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	width: 59%;
+}
+
+.read_write{
+	width: 40%;
+	margin-left: 80px;
+}
+
+.first_about{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.asdf_img{
+	width: 400px;
+	height: 400px;
+}
+
+.read_write span{
+	width: 400px;
+	font-size: 1.7rem;
+	font-weight: 500;
+	display: block;
+}
+
+.read_write > *{
+	height: 50px;
+	width: 140px;
+	user-select: none;
+}
+
+#read_now{
+	background-color: rgb(54, 155, 223);
+	color: white;
+	border: none;
+}
+
+#write_now{
+	border: 1px solid black;
+}
+
+.read_write button:hover{
+	opacity: 0.7;
+}
+
+.about_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	border-bottom: solid 1 px white;
+}
+
+.about_text h2{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+}
+
+.about_text span{
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+/* Хорошие стороны */
+.atts{
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.attr_el{
+	width: 15%;
+	max-height: 200px;
+	margin: auto;
+	margin-top: 0;
+}
+
+.attr_el p{
+	font-size: 0.90rem;
+	word-spacing: 3px;
+	text-align: center;
+}
+
+h6{
+	text-align: center; 
+	margin-top: 0;
+	font-size: 0.9rem;
+}
+
+hr{
+	margin-top: 100px
+}
+
+.best_for_writers{
+	margin-top: 80px;
+}
+
+.container_2{
+	width: 50%;
+	display: inline-block;
+}
+
+.writers_text{
+	display: inline-block;
+	width: 40%;
+}
+
+.mobile{
+	width: 45%;
+	padding-left: 25%;
+	padding-bottom: 25%;
+}
+
+.writers_text > *{
+	text-align: center;
+}
+
+/* footer */
+#footer{
+	background-color: var(--footer_bg_color)	;
+	color: white;
+	width: 100vw;
+	height: 35vh;
+	max-height: 35vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.footer_container{
+	width: 60vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_about{
+	width: 15vw;
+}
+
+#footer p{
+	font-size: 0.9rem;
+	color: white
+}
+
+#footer h3{
+	text-transform: uppercase;
+	color: var(--footer_headings_color);
+	margin-bottom: 10px;
+}
+
+select{
+	width: 10vw;
+	height: 25px;
+}
+
+.policies a{
+	color: white;
+	font-size: 0.8rem;
+	text-decoration: none; 
+}
+
+.help a{
+	color: rgb(54, 155, 223);
+	display: block;
+	margin-bottom: 10px;
+}
+
+:root:has(#dark:checked){
+	--text_color: white;
+	--about_bg_color: black;
+	--footer_bg_color: black;
+	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
+	--darken_lighten_about_bg: 0, 0, 0, 0.3;
+	--opacity: 0.9;
+	--footer_headings_color: rgb(252, 196, 92);
+}
+
+:root:has(#light:checked){
+	--text_color: black;
+	--about_bg_color: white;
+	--footer_bg_color: rgb(48, 96, 104);
+	--darken_lighten_intro_bg: 0, 0, 0, 0;
+	--darken_lighten_about_bg: 0, 0, 0, 0;
+	--opacity: 0.8;
+		--footer_headings_color: rgb(252, 196, 92);
+}

@@ -1,0 +1,123 @@
+body{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/bgImg.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 450px;
+  height: 600px;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border-radius: 5px;
+  border: solid 1px black;   
+  position: absolute;
+  box-shadow: 0px -2px 21px 3px rgba(12, 24, 27, 0.75);
+  -webkit-box-shadow: 0px -2px 21px 3px rgba(12, 24, 27, 0.75);
+  -moz-box-shadow: 0px -2px 21px 3px rgba(12, 24, 27, 0.75);
+}
+
+#main{
+  z-index: 100;
+}
+
+#first{
+  transform: rotate(2deg)
+}
+
+#second{
+  transform: rotate(4deg)
+}
+
+#third{
+  transform: rotate(-2deg) 
+}
+
+#fourth{
+  transform: rotate(-4deg) 
+}
+
+.top{
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-left: 30px;
+}
+
+.first{
+  font-size: 1.5rem;
+}
+
+.second{
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.registration{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h5{
+  margin-bottom: 2px;
+  opacity: 70%;
+}
+
+input{
+  width: 350px;
+  height: 50px;
+}
+
+.terms{
+  margin-left: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+span{
+  opacity: 0.7;
+}
+
+button{
+  background-color: rgb(39, 71, 78);
+  color: white;
+  border: none;
+  width: 78%;
+  height: 50px;
+  margin-left: 45px;
+}
+
+button:active{
+  opacity: 0.9;
+}
+
+.sign_up{
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.sign_up a{
+  margin-left: 10px;
+  color: rgb(96, 96, 211)
+}
+
+.sign_up a:hover{
+  color: rgb(3, 3, 252)
+}
+
