@@ -21,41 +21,30 @@ body{
 
 :root{
 	--text_color: white;
-	--bg_color: rgb(14, 14, 14);
-	--footer_bg_color: black;
+	--bg_color: rgb(27, 26, 26);
+	--footer_bg_color: rgb(15, 15, 15);
+	--footer_headings_color: rgb(252, 196, 92);
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
-	--opacity: 0.9;
-	--footer_headings_color: rgb(252, 196, 92);
-}
+	--bg_opacity: 0.7;
 
-/* The first page */
-.intro{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap:25vh;
-
-	width: 60vw;
-	height: 100vh;
-	
-	margin: auto;
-	color: var(--text_color);
-	background-color: var(--bg_color);
- 	user-select: none;
+	--text_size_small: 14px;
+	--text_size_primary: 16px;
+	--text_size_header: 24px;
 }
 
 /* Menu */
 .header_bg{
 	width: 100vw;
-	height: 60px;
+	height: 75qpx;
 	background-color: var(--bg_color);
 }
 
 .header{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	width: 55vw;
+	width: 58vw;
 	height: 60px;
 	margin: auto
 }
@@ -65,11 +54,16 @@ body{
 	gap: 25px;	
 }
 
+.logo{
+	color: white;
+	font-size: var(--text_size_header);
+}
+
 .elements a{
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	font-size: 0.8rem;
+	font-size: var(--text_size_small);
 }
 
 .reg_button{
@@ -78,7 +72,7 @@ body{
 	border: none;
 	padding-right: 10px;
 	text-transform: uppercase;
-	font-size: 0.8rem;
+	font-size: var(--text_size_small);
 }
 
 .menu_element:hover,
@@ -86,23 +80,41 @@ body{
 	color: #fce38a
 }
 
+/* The first page */
+.intro{
+	width: 60vw;
+	height: 100vh;
+	
+	margin: auto;
+	color: var(--text_color);
+	background-color: var(--bg_color);
+	user-select: none;
+	opacity: var(--bg_opacity);
+}
+
 /* Stuff in intro */
 .content{
-	width: 60wv;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 50px;
+	gap: 30px;	
+	
+	padding-top: 20vh;
+	width: 60wv;
 }
+
+.content:hover{
+	--bg_opacity: 0.95
+} 
 
 .template{
 	font-family: 'Kaushan Script', cursive;
-	font-size: 3.2rem; 
+	font-size: var(--text_size_header); 
 }
 
-.intro_welcome{
+.slogan{
 	text-transform: uppercase;
-	font-size: 4.8rem;
+	font-size: 40px;
 	font-weight: 700;
 }
 
@@ -116,35 +128,23 @@ body{
 .learn_button{
 	color: white;
 	text-transform: uppercase;
-	font-size: 0.8rem;
-	border: 1.5px solid;
+	font-size: var(--text_size_small);
+	border: 1px solid;
 	border-color: white;
 	background: transparent;
-	height: 30px;
-	width: 125px;
+	height: 40px;
+	width: 160px;
 }
 
 .learn_button:hover{
 	opacity: 0.6;
 }
 
-.a{
-	width: 50px;
-	height: 50px;
-	color: black;
-}
 
-/* Про нас */
+/* Про сайт */
 .about_container{
 	width: 100vw;
 	height: 150vh;
-	/* background-image: 
-		linear-gradient(
-			rgba(var(--darken_lighten_about_bg)), 
-			rgba(var(--darken_lighten_about_bg))
-		),
-		url('../img/about-page-bg.jpg');
-	background-attachment: fixed;	 */
 	display: flex;
 	justify-content: center;
 }
@@ -154,7 +154,7 @@ body{
 	color: var(--text_color);
 	width: 60vw;
 	height: 150vh;
-	opacity: var(--opacity);
+	opacity: var(--bg_opacity);
 }
 
 .container{
@@ -251,8 +251,10 @@ h6{
 	font-size: 0.9rem;
 }
 
-hr{
-	margin-top: 100px
+.sep{
+	margin-top: 100px;
+	width: 95%;
+	height: 0;
 }
 
 .best_for_writers{
@@ -348,5 +350,5 @@ select{
 	--darken_lighten_intro_bg: 0, 0, 0, 0;
 	--darken_lighten_about_bg: 0, 0, 0, 0;
 	--opacity: 0.8;
-		--footer_headings_color: rgb(252, 196, 92);
+	--footer_headings_color: rgb(252, 196, 92);
 }
