@@ -26,11 +26,15 @@ body{
 	--footer_headings_color: rgb(252, 196, 92);
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
-	--bg_opacity: 0.7;
+	--bg_opacity: 0.85;
 
 	--text_size_small: 14px;
 	--text_size_primary: 16px;
-	--text_size_header: 24px;
+	--text_size_header: 22px;
+}
+
+h2{
+	font-size: var(--text_size_header);
 }
 
 /* Menu */
@@ -103,10 +107,6 @@ body{
 	width: 60wv;
 }
 
-.content:hover{
-	--bg_opacity: 0.95
-} 
-
 .template{
 	font-family: 'Kaushan Script', cursive;
 	font-size: var(--text_size_header); 
@@ -140,6 +140,15 @@ body{
 	opacity: 0.6;
 }
 
+.about_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	border-bottom: solid 1 px white;
+	font-size: var(--text_size_small);
+	opacity: .9;
+}
 
 /* Про сайт */
 .about_container{
@@ -181,7 +190,7 @@ body{
 
 .read_write span{
 	width: 400px;
-	font-size: 1.7rem;
+	font-size: var(--text_size_header);
 	font-weight: 500;
 	display: block;
 }
@@ -190,6 +199,7 @@ body{
 	height: 50px;
 	width: 140px;
 	user-select: none;
+	font-size: var(--text_size_small);
 }
 
 #read_now{
@@ -200,19 +210,15 @@ body{
 
 #write_now{
 	border: 1px solid black;
+	background-color: rgb(12, 12, 12);
+	color: white;
 }
+
 
 .read_write button:hover{
 	opacity: 0.7;
 }
 
-.about_text{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 30px;
-	border-bottom: solid 1 px white;
-}
 
 .about_text h2{
 	font-family: 'Kaushan Script', cursive;
@@ -252,7 +258,7 @@ h6{
 }
 
 .sep{
-	margin-top: 100px;
+	margin-top: 50px;
 	width: 95%;
 	height: 0;
 }
