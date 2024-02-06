@@ -26,10 +26,12 @@ body{
 	--footer_headings_color: rgb(252, 196, 92);
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
-	--bg_opacity: 0.85;
+	--bg_opacity: 0.7;
 
-	--text_size_small: 14px;
-	--text_size_primary: 16px;
+	--text_size_extraSmall: 11px;
+	--text_size_small: 13px;
+	--text_size_primary: 15px;
+	--text_size_smallHeader: 18px;
 	--text_size_header: 22px;
 }
 
@@ -214,11 +216,9 @@ h2{
 	color: white;
 }
 
-
 .read_write button:hover{
 	opacity: 0.7;
 }
-
 
 .about_text h2{
 	font-family: 'Kaushan Script', cursive;
@@ -232,29 +232,29 @@ h2{
 }
 
 /* Хорошие стороны */
-.atts{
+.attributes{
 	display: flex;
 	align-items: center;
 	margin-top: 60px;
 }
 
-.attr_el{
+.attr_header{
+	text-align: center; 
+	margin-top: 0;
+	font-size: var(--text_size_smallHeader);
+}
+
+.attr_element{
 	width: 15%;
 	max-height: 200px;
 	margin: auto;
 	margin-top: 0;
 }
 
-.attr_el p{
-	font-size: 0.90rem;
+.attributes_p{
+	font-size: var(--text_size_primary);
 	word-spacing: 3px;
 	text-align: center;
-}
-
-h6{
-	text-align: center; 
-	margin-top: 0;
-	font-size: 0.9rem;
 }
 
 .sep{
@@ -263,8 +263,13 @@ h6{
 	height: 0;
 }
 
+
 .best_for_writers{
 	margin-top: 80px;
+}
+
+.writers_header{
+	font-size: var(--text_size_header);
 }
 
 .container_2{
@@ -277,15 +282,26 @@ h6{
 	width: 40%;
 }
 
+.writers_text p{
+	font-size: var(--text_size_primary);
+	margin-bottom: 30px;
+}
+
+.writers_text h4{
+	font-size: var(--text_size_smallHeader);
+	margin: 10px
+}
+
+.writers_text > *{
+	text-align: center;
+}
+
 .mobile{
 	width: 45%;
 	padding-left: 25%;
 	padding-bottom: 25%;
 }
 
-.writers_text > *{
-	text-align: center;
-}
 
 /* footer */
 #footer{
@@ -312,7 +328,7 @@ h6{
 }
 
 #footer p{
-	font-size: 0.9rem;
+	font-size: var(--text_size_small);
 	color: white
 }
 
@@ -329,7 +345,7 @@ select{
 
 .policies a{
 	color: white;
-	font-size: 0.8rem;
+	font-size: var(--text_size_extraSmall);
 	text-decoration: none; 
 }
 
@@ -337,6 +353,7 @@ select{
 	color: rgb(54, 155, 223);
 	display: block;
 	margin-bottom: 10px;
+	font-size: var(--text_size_small);
 }
 
 :root:has(#dark:checked){
