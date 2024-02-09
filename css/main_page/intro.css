@@ -1,13 +1,13 @@
 /* The first page */
 #intro{
-	width: 60vw;
-	
+	width: var(--main_container_width);
+	height: auto;
+
 	margin: auto;
 	color: var(--text_color);
 	background-color: var(--container_bg_color);
 	user-select: none;
 	opacity: var(--bg_opacity);
-	border-bottom: solid 1px var(--accent_color);
 	padding-bottom: 50px;
 }
 
@@ -18,7 +18,7 @@
 	align-items: center;
 	gap: 30px;	
 	
-	padding-top: 20vh;
+	padding-top: 30px;
 	width: 60wv;
 }
 
@@ -30,14 +30,14 @@
 	gap: 10px;
 
 	width: 100%;
-	aspect-ratio: 3.5 / 1;
+	aspect-ratio: 3.7 / 1;
 	background-image:  linear-gradient(
-		rgba(0, 0, 0, 0.4),
-		rgba(0, 0, 0, 0.4)),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.3)),
 		url("../../img/banner.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-radius: 2%;
+	border-radius: 15px;
 }
 
 .slogan{
@@ -53,28 +53,33 @@
 	font-style: italic;
 }
 
+.browse_novels_container{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px;
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
+}
+
+.browse_novels_header{
+	margin: 0;
+}
+
 .learn_button{
 	color: var(--text_color);
+	background-color: var(--call_to_action_color);
+
 	text-transform: uppercase;
 	font-size: var(--text_size_small);
 	border: 1px solid;
 	border-color: var(--accent_color);
-	background: transparent;
 	height: 40px;
 	width: 160px;
 }
 
 .learn_button:hover{
 	opacity: 0.6;
-}
-
-.about_text{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-bottom: solid 1 px white;
-	font-size: var(--text_size_small);
-	opacity: .9;
 }
 
 .intro_text{
