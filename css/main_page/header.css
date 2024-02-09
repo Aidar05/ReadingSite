@@ -30,16 +30,30 @@
 	text-decoration: none;
 	color: var(--text_color);
 	text-transform: uppercase;
-	font-size: var(--text_size_small);
+	font-size: var(--menu_text_size);
+}
+
+.reg a{
+	text-decoration: none;
+	color: inherit
 }
 
 .reg_button{
 	color: var(--text_color);
 	background: transparent;
 	border: none;
-	padding-right: 10px;
 	text-transform: uppercase;
 	font-size: var(--text_size_small);
+}
+
+
+#login_btn{
+	text-align: center;
+	background-color: var(--call_to_action_color);
+	color: var(--call_to_action_textColor);
+	height: 30px;
+	width: 120px;
+	margin-left: 15px;
 }
 
 .menu_element:hover,
