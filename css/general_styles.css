@@ -40,6 +40,7 @@ body{
 	--text_size_primary: 16px;
 	--text_size_smallHeader: 18px;
 	--text_size_header: 22px;
+	--text_size_bigHeader: 40px
 }
 
 :root:has(#dark:checked){
