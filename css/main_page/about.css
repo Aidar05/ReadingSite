@@ -1,0 +1,143 @@
+/* Про сайт */
+#about_container{
+	width: 100vw;
+	height: 140vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about_subcontainer{
+	height: 100%;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	
+	background-color: var(--container_bg_color);
+	color: var(--text_color);
+	opacity: var(--bg_opacity);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	width: 59%;
+}
+
+.read_write{
+	width: 40%;
+	margin-left: 80px;
+}
+
+.first_about{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.asdf_img{
+	width: 400px;
+	height: 400px;
+}
+
+.read_write span{
+	width: 400px;
+	font-size: var(--text_size_header);
+	font-weight: 500;
+	display: block;
+}
+
+.read_write > *{
+	height: 50px;
+	width: 140px;
+	user-select: none;
+	font-size: var(--text_size_small);
+}
+
+#read_now{
+	background-color: var(--accent_color);
+	color: white;
+	border: none;
+}
+
+#write_now{
+	border: 1px solid rgb(95, 95, 95);
+	background-color: var(--container_bg_color);
+	color: var(--text_color);
+}
+
+.read_write button:hover{
+	opacity: 0.7;
+}
+
+.about_text h2{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+}
+
+.about_text span{
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+/* Хорошие стороны */
+.attributes{
+	display: flex;
+	align-items: center;
+}
+
+.attr_header{
+	text-align: center; 
+	margin-top: 0;
+	font-size: var(--text_size_smallHeader);
+}
+
+.attr_element{
+	width: 15%;
+	max-height: 200px;
+	margin: auto;
+	margin-top: 0;
+}
+
+.attributes_p{
+	font-size: var(--text_size_primary);
+	word-spacing: 3px;
+	text-align: center;
+}
+
+.best_for_writers{
+}
+
+.writers_header{
+	font-size: var(--text_size_header);
+}
+
+.container_2{
+	width: 50%;
+	display: inline-block;
+}
+
+.writers_text{
+	display: inline-block;
+	width: 40%;
+}
+
+.writers_text p{
+	font-size: var(--text_size_primary);
+}
+
+.writers_text h4{
+	font-size: var(--text_size_smallHeader);
+}
+
+.writers_text > *{
+	text-align: center;
+}
+
+.mobile{
+	width: 45%;
+	padding-left: 25%;
+	padding-bottom: 25%;
+}

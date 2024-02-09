@@ -1,3 +1,85 @@
-body{
-    overflow-x: hidden;
+/* Сбрасываю стили браузера по дефолту */
+body, h1, p, span, button{
+    margin: 0;
+    padding: 0;
+    font: inherit;
 }
+
+body{
+    width: 100vw;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+	background-image: 
+	linear-gradient(
+			rgba(var(--darken_lighten_about_bg)), 
+			rgba(var(--darken_lighten_about_bg))
+		),
+		url('../img/about-page-bg.jpg');
+        background-attachment: fixed;	
+}
+
+:root{
+	--bg_color: #000000;
+
+	--text_color: #c9d1c8;
+	--container_bg_color: #000000;
+
+	--footer_bg_color: #000000;
+	--footer_headings_color: #c9d1c8;
+	--footer_text_color: #c9d1c8;
+
+	--accent_color: #242424;
+
+	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
+	--darken_lighten_about_bg: 0, 0, 0, 0.3;
+	--bg_opacity: .9;
+	
+	--text_size_small: 14px;
+	--text_size_primary: 16px;
+	--text_size_smallHeader: 18px;
+	--text_size_header: 22px;
+}
+
+:root:has(#dark:checked){
+	--text_color: #c9d1c8;
+	--container_bg_color: #000000;
+	
+	--footer_bg_color: #000000;
+	--footer_headings_color: #c9d1c8;
+	--footer_text_color: #c9d1c8;
+	
+	--accent_color: #242424;
+	
+	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
+	--darken_lighten_about_bg: 0, 0, 0, 0.3;
+	
+	--opacity: 0.9;
+}
+
+/* :root:has(#light:checked){
+	--text_color: #f1dcc9;
+	--container_bg_color: #9f4636;
+	--footer_bg_color: #6c2d2c;
+	--footer_text_color: #f1dcc9; 
+	--darken_lighten_intro_bg: 0, 0, 0, 0;
+	--darken_lighten_about_bg: 0, 0, 0, 0;
+	--opacity: 0.8;
+	--footer_headings_color: rgb(252, 196, 92);
+} */
+
+
+.main_container{
+	height: 90vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2{
+	font-size: var(--text_size_header);
+}
+
+
