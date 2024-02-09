@@ -41,12 +41,20 @@ body{
 	--text_size_header: 22px;
 }
 
+.main_container{
+	height: 90vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 h2{
 	font-size: var(--text_size_header);
 }
 
 /* Menu */
-.header_bg{
+#header_bg{
 	width: 100vw;
 	height: 75qpx;
 	background-color: var(--container_bg_color);
@@ -94,9 +102,8 @@ h2{
 }
 
 /* The first page */
-.intro{
+#intro{
 	width: 60vw;
-	height: auto;
 	
 	margin: auto;
 	color: var(--text_color);
@@ -158,19 +165,23 @@ h2{
 }
 
 /* Про сайт */
-.about_container{
+#about_container{
 	width: 100vw;
-	height: auto;
+	height: 140vh;
 	display: flex;
 	justify-content: center;
-	border-bottom: solid 1px var(--accent_color);
+	align-items: center;
 }
 
-.about_page{
+.about_subcontainer{
+	height: 100%;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	
 	background-color: var(--container_bg_color);
 	color: var(--text_color);
-	width: 60vw;
-	height: 100%;
 	opacity: var(--bg_opacity);
 }
 
@@ -241,7 +252,6 @@ h2{
 .attributes{
 	display: flex;
 	align-items: center;
-	margin-top: 60px;
 }
 
 .attr_header{
@@ -264,7 +274,6 @@ h2{
 }
 
 .best_for_writers{
-	margin-top: 80px;
 }
 
 .writers_header{
@@ -283,12 +292,10 @@ h2{
 
 .writers_text p{
 	font-size: var(--text_size_primary);
-	margin-bottom: 30px;
 }
 
 .writers_text h4{
 	font-size: var(--text_size_smallHeader);
-	margin: 10px
 }
 
 .writers_text > *{
