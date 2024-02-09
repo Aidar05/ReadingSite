@@ -20,17 +20,23 @@ body{
 }
 
 :root{
-	--text_color: white;
-	--bg_color: rgb(27, 26, 26);
-	--footer_bg_color: rgb(15, 15, 15);
-	--footer_headings_color: rgb(252, 196, 92);
+	--bg_color: #04202c;
+
+	--text_color: #c9d1c8;
+	--container_bg_color: #304040;
+
+	--footer_bg_color: #304040;
+	--footer_headings_color: #5b7065;
+	--footer_text_color: #c9d1c8;
+
+	--accent_color: #04202c;
+
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
-	--bg_opacity: 0.7;
-
-	--text_size_extraSmall: 11px;
-	--text_size_small: 13px;
-	--text_size_primary: 15px;
+	--bg_opacity: .9;
+	
+	--text_size_small: 14px;
+	--text_size_primary: 16px;
 	--text_size_smallHeader: 18px;
 	--text_size_header: 22px;
 }
@@ -43,7 +49,8 @@ h2{
 .header_bg{
 	width: 100vw;
 	height: 75qpx;
-	background-color: var(--bg_color);
+	background-color: var(--container_bg_color);
+	border-bottom: solid 1px var(--accent_color);
 }
 
 .header{
@@ -61,19 +68,19 @@ h2{
 }
 
 .logo{
-	color: white;
+	color: var(--text_color);
 	font-size: var(--text_size_header);
 }
 
 .elements a{
 	text-decoration: none;
-	color: white;
+	color: var(--text_color);
 	text-transform: uppercase;
 	font-size: var(--text_size_small);
 }
 
 .reg_button{
-	color: white;
+	color: var(--text_color);
 	background: transparent;
 	border: none;
 	padding-right: 10px;
@@ -83,19 +90,21 @@ h2{
 
 .menu_element:hover,
 .reg_button:hover {
-	color: #fce38a
+	color: var(--accent_color)
 }
 
 /* The first page */
 .intro{
 	width: 60vw;
-	height: 100vh;
+	height: auto;
 	
 	margin: auto;
 	color: var(--text_color);
-	background-color: var(--bg_color);
+	background-color: var(--container_bg_color);
 	user-select: none;
 	opacity: var(--bg_opacity);
+	border-bottom: solid 1px var(--accent_color);
+	padding-bottom: 50px;
 }
 
 /* Stuff in intro */
@@ -120,19 +129,12 @@ h2{
 	font-weight: 700;
 }
 
-.line{
-	width: 40px;
-	height: 1px;
-	background-color: white;
-	border: none;
-}
-
 .learn_button{
-	color: white;
+	color: var(--text_color);
 	text-transform: uppercase;
 	font-size: var(--text_size_small);
 	border: 1px solid;
-	border-color: white;
+	border-color: var(--accent_color);
 	background: transparent;
 	height: 40px;
 	width: 160px;
@@ -146,25 +148,29 @@ h2{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 30px;
 	border-bottom: solid 1 px white;
 	font-size: var(--text_size_small);
 	opacity: .9;
 }
 
+.intro_text{
+	font-size: var(--text_size_primary);
+}
+
 /* Про сайт */
 .about_container{
 	width: 100vw;
-	height: 150vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
+	border-bottom: solid 1px var(--accent_color);
 }
 
 .about_page{
-	background-color: var(--bg_color);
+	background-color: var(--container_bg_color);
 	color: var(--text_color);
 	width: 60vw;
-	height: 150vh;
+	height: 100%;
 	opacity: var(--bg_opacity);
 }
 
@@ -205,15 +211,15 @@ h2{
 }
 
 #read_now{
-	background-color: rgb(54, 155, 223);
+	background-color: var(--accent_color);
 	color: white;
 	border: none;
 }
 
 #write_now{
-	border: 1px solid black;
-	background-color: rgb(12, 12, 12);
-	color: white;
+	border: 1px solid rgb(95, 95, 95);
+	background-color: var(--container_bg_color);
+	color: var(--text_color);
 }
 
 .read_write button:hover{
@@ -257,13 +263,6 @@ h2{
 	text-align: center;
 }
 
-.sep{
-	margin-top: 50px;
-	width: 95%;
-	height: 0;
-}
-
-
 .best_for_writers{
 	margin-top: 80px;
 }
@@ -306,7 +305,7 @@ h2{
 /* footer */
 #footer{
 	background-color: var(--footer_bg_color)	;
-	color: white;
+	color: var(--footer_text_color);
 	width: 100vw;
 	height: 35vh;
 	max-height: 35vh;
@@ -315,6 +314,8 @@ h2{
 	align-items: center;
 	justify-content: space-around;
 	gap: 30px;
+
+	border-top: solid 0px var(--accent_color);
 }
 
 .footer_container{
@@ -329,7 +330,7 @@ h2{
 
 #footer p{
 	font-size: var(--text_size_small);
-	color: white
+	color: var(--footer_text_color)
 }
 
 #footer h3{
@@ -344,8 +345,8 @@ select{
 }
 
 .policies a{
-	color: white;
-	font-size: var(--text_size_extraSmall);
+	color: var(--text_color);
+	font-size: var(--text_size_small);
 	text-decoration: none; 
 }
 
@@ -358,7 +359,7 @@ select{
 
 :root:has(#dark:checked){
 	--text_color: white;
-	--bg_color: black;
+	--container_bg_color: black;
 	--footer_bg_color: black;
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
@@ -366,12 +367,13 @@ select{
 	--footer_headings_color: rgb(252, 196, 92);
 }
 
-:root:has(#light:checked){
-	--text_color: black;
-	--bg_color: white;
-	--footer_bg_color: rgb(48, 96, 104);
+/* :root:has(#light:checked){
+	--text_color: #f1dcc9;
+	--container_bg_color: #9f4636;
+	--footer_bg_color: #6c2d2c;
+	--footer_text_color: #f1dcc9; 
 	--darken_lighten_intro_bg: 0, 0, 0, 0;
 	--darken_lighten_about_bg: 0, 0, 0, 0;
 	--opacity: 0.8;
 	--footer_headings_color: rgb(252, 196, 92);
-}
+} */
