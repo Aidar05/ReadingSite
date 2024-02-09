@@ -18,7 +18,7 @@ body{
 		),
 		url('../img/about-page-bg.jpg');
         background-attachment: fixed;	 */
-		background-color: black;
+		background-color: var(--bg_color);
 }
 
 :root{
@@ -33,6 +33,7 @@ body{
 
 	--accent_color: #242424;
 	--call_to_action_color: #6f12a5;
+	--call_to_action_textColor: #ffffff;
 
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
@@ -57,6 +58,7 @@ body{
 	
 	--accent_color: #242424;
 	--call_to_action_color: #801abb;
+	--call_to_action_textColor: #ffffff;
 
 	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
 	--darken_lighten_about_bg: 0, 0, 0, 0.3;
@@ -64,16 +66,25 @@ body{
 	--opacity: 0.9;
 }
 
-/* :root:has(#light:checked){
-	--text_color: #f1dcc9;
-	--container_bg_color: #9f4636;
-	--footer_bg_color: #6c2d2c;
-	--footer_text_color: #f1dcc9; 
-	--darken_lighten_intro_bg: 0, 0, 0, 0;
-	--darken_lighten_about_bg: 0, 0, 0, 0;
-	--opacity: 0.8;
-	--footer_headings_color: rgb(252, 196, 92);
-} */
+:root:has(#light:checked){
+	--bg_color: white;
+
+	--text_color: #000000;
+	--container_bg_color: #ffffff;
+	
+	--footer_bg_color: #ffffff;
+	--footer_headings_color: #000000;
+	--footer_text_color: #000000;
+	
+	--accent_color: #adadad;
+	--call_to_action_color: #a836eb;
+	--call_to_action_textColor: #ffffff;
+
+	--darken_lighten_intro_bg: 0, 0, 0, 0.4;
+	--darken_lighten_about_bg: 0, 0, 0, 0.3;
+	
+	--opacity: 0.9;
+}
 
 h2{
 	font-size: var(--text_size_header);

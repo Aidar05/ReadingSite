@@ -12,8 +12,8 @@
 	width: var(--main_container_width);
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
-	padding-bottom: 80px;
+	gap: 40px;
+	padding-bottom: 40px;
 
 	background-color: var(--container_bg_color);
 	color: var(--text_color);
@@ -59,7 +59,7 @@
 }
 
 #read_now{
-	background-color: var(--accent_color);
+	background-color: var(--call_to_action_color);
 	color: white;
 	border: none;
 }
