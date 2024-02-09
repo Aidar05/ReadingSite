@@ -26,8 +26,9 @@
 	font-size: var(--text_size_header);
 }
 
+
 .elements a{
-	text-decoration: none;
+	text-decoration: none; 
 	color: var(--text_color);
 	text-transform: uppercase;
 	font-size: var(--menu_text_size);
