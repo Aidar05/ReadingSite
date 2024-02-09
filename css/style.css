@@ -26,7 +26,7 @@ body{
 	--container_bg_color: #304040;
 
 	--footer_bg_color: #304040;
-	--footer_headings_color: #5b7065;
+	--footer_headings_color: #c9d1c8;
 	--footer_text_color: #c9d1c8;
 
 	--accent_color: #04202c;
@@ -56,9 +56,10 @@ h2{
 /* Menu */
 #header_bg{
 	width: 100vw;
-	height: 75qpx;
+	height: 60px;
 	background-color: var(--container_bg_color);
 	border-bottom: solid 1px var(--accent_color);
+	position:;
 }
 
 .header{
@@ -67,7 +68,7 @@ h2{
 	justify-content: space-between;
 	width: 58vw;
 	height: 60px;
-	margin: auto
+	margin: auto;
 }
 
 .elements{
@@ -178,7 +179,7 @@ h2{
 	width: 60vw;
 	display: flex;
 	flex-direction: column;
-	gap: 100px;
+	gap: 80px;
 	
 	background-color: var(--container_bg_color);
 	color: var(--text_color);
@@ -308,7 +309,6 @@ h2{
 	padding-bottom: 25%;
 }
 
-
 /* footer */
 #footer{
 	background-color: var(--footer_bg_color)	;
@@ -322,7 +322,7 @@ h2{
 	justify-content: space-around;
 	gap: 30px;
 
-	border-top: solid 0px var(--accent_color);
+	border-top: solid 1px var(--accent_color);
 }
 
 .footer_container{
