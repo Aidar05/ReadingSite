@@ -21,6 +21,13 @@ body{
 		background-color: var(--bg_color);
 }
 
+.top_container{
+    width: 65vw;
+    margin: auto;
+    color: white
+}
+
+
 :root{
 	--bg_color: #000000;
 

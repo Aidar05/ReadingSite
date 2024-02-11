@@ -16,173 +16,176 @@
   </head>
 	
 	<body>
-    <div id="header_bg" id="header">
-      <div class="header" id="header">
-        <span class="logo"><a href="index.html">AsDf</a></span>
-        
-        <div class="elements">
-          <a href="#about" class="menu_element">Про сайт</a>
-          <a href="#" class="menu_element">Читать</a>
-          <a href="#" class="menu_element">Каталог</a>
-          <a href="#" class="menu_element">Поиск</a>
-          <a href="#footer" class="menu_element">&#8943;</a>
-        </div>
-
-        <div class="reg" v-if="logged_in">
-          <button class="reg_button"><a href="..\html\registration.html">{{ asdf }}</a></button>
-          <button class="reg_button" id="login_btn"><a href="..\html\sign_in.html">Войти</a></button>
-        </div>
-
-        <div class="profile" v-else="!logged_in"></div>
-      </div>        
-    </div>
-
-		<div class="main_container" id="intro">
-
-			<div class="content"> 
-        <div class="banner_container">
-          <div class="slogan">Путешествие за гранью слов.</div>
-
-          <div class="small_slogan">Ваш личный центр чтения</div>
-        </div>
-
-
-        <div class="browse_novels_container">
-          <h2 class="browse_novels_header">Лучшее место для читателей</h2>
+    <div class="app">
+      <div id="header_bg" id="header">
+        <div class="header" id="header">
+          <span class="logo"><a href="index.html">AsDf</a></span>
           
-          <span class="intro_text">Эта платформа была создана читетелем, в целях читать
-            больше и лучше. Я позаботилися о том, чтобы для у нас всех были потрясающие 
-            истории для чтения и простые способы их найти. С постоянно совершенствующимс
-            я набором инструментов для поддержки авторов на их пути к успеху.
-          </span>
-          
-          <a href="browse.html"><button class="learn_button">Browse</button></a>
-        </div>
-        
-			</div>		
-		</div>
-
-    <!-- Про сайт -->
-    <div class="main_container" id="about_container">
-      <div class="about_subcontainer" id="about">
-        
-        <div class="attributes">
-          <div class="attr_element">
-            <h4 class="attr_header">Поиск</h4>
-
-            <p class="attributes_p">Используйте расширенные функции поиска, чтобы найти идеальную историю для вас.</p>
+          <div class="elements">
+            <a href="#about" class="menu_element">Про сайт</a>
+            <a href="#" class="menu_element">Читать</a>
+            <a href="#" class="menu_element">Каталог</a>
+            <a href="#" class="menu_element">Поиск</a>
+            <a href="#footer" class="menu_element">&#8943;</a>
           </div>
-
-          <div class="attr_element">
-            <h4 class="attr_header">Великолепный список</h4>
-
-            <p class="attributes_p">Проверьте публичные списки, чтобы найти отличные истории, от самых топовых до трендовых.</p>
+  
+          <div class="reg" v-if="logged_in">
+            <button class="reg_button"><a href="..\html\registration.html">{{ asdf }}</a></button>
+            <button class="reg_button" id="login_btn"><a href="..\html\sign_in.html">Войти</a></button>
           </div>
-          
-          <div class="attr_element">
-            <h4 class="attr_header">Интерактивность</h4>
+  
+          <div class="profile" v-else="!logged_in"></div>
+        </div>        
+      </div>
+  
+      <div class="main_container" id="intro">
+  
+        <div class="content"> 
+          <div class="banner_container">
+            <div class="slogan">Путешествие за гранью слов.</div>
+  
+            <div class="small_slogan">Ваш личный центр чтения</div>
+          </div>
+  
+  
+          <div class="browse_novels_container">
+            <h2 class="browse_novels_header">Лучшее место для читателей</h2>
             
-            <p class="attributes_p">Наслаждайтесь опытом прямой связи с создателем произведения. 
-              Прямое взаимодействие поклонника и автора.
+            <span class="intro_text">Эта платформа была создана читетелем, в целях читать
+              больше и лучше. Я позаботилися о том, чтобы для у нас всех были потрясающие 
+              истории для чтения и простые способы их найти. С постоянно совершенствующимс
+              я набором инструментов для поддержки авторов на их пути к успеху.
+            </span>
+            
+            <a href="browse.html"><button class="learn_button">Browse</button></a>
+          </div>
+          
+        </div>		
+      </div>
+  
+      <!-- Про сайт -->
+      <div class="main_container" id="about_container">
+        <div class="about_subcontainer" id="about">
+          
+          <div class="attributes">
+            <div class="attr_element">
+              <h4 class="attr_header">Поиск</h4>
+  
+              <p class="attributes_p">Используйте расширенные функции поиска, чтобы найти идеальную историю для вас.</p>
+            </div>
+  
+            <div class="attr_element">
+              <h4 class="attr_header">Великолепный список</h4>
+  
+              <p class="attributes_p">Проверьте публичные списки, чтобы найти отличные истории, от самых топовых до трендовых.</p>
+            </div>
+            
+            <div class="attr_element">
+              <h4 class="attr_header">Интерактивность</h4>
+              
+              <p class="attributes_p">Наслаждайтесь опытом прямой связи с создателем произведения. 
+                Прямое взаимодействие поклонника и автора.
+              </p>
+            </div>
+            
+            <div class="attr_element">
+              <h4 class="attr_header">Персонализированные списки</h4>
+  
+              <p class="attributes_p">Список новелл подобранных специально для тебя</p>
+            </div>
+          </div>
+  
+          <!-- То что с перва -->
+          <div class="first_about">
+            <div class="container">
+              <img class="asdf_img" src="..\img\laptopImg.png">
+            </div>  
+            
+            <div class="read_write">
+              <span>Родина Электронных Книг</span>
+              <button id="read_now">Читать сейчас</button>
+              <button id="write_now">Писать сейчас</button>
+            </div>
+          </div>
+  
+          <div class="best_for_writers">
+            <div class="container_2">
+              <img class="mobile" src="..\img\mobile.png" alt="asdf">
+            </div>
+          
+            <div class="writers_text">
+              <h2 class="writers_header">Лучшее место для писателей</h2>
+  
+              <div class="text_container">
+                <h4>Пиши</h4>
+                <p>Вы можете найти бесчисленное множество инструментов для помощи в написании текстов.</p>
+              </div>
+  
+              <div class="text_container">
+                <h4>Интерактируй</h4>
+                <p>Процветающее сообщество, с которым можно взаимодействовать и делиться своей работой, а 
+                  также получать обратную связь и поддержку.</p>
+              </div>
+  
+              <div class="text_container">
+                <h4>Рости</h4>
+                <p>Не позволяйте своей истории пылиться. Опубликуйтесь на AsDf и найдите новых 
+                  читателей - сделайте первый шаг на пути к успеху.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="footer">
+        <div class="footer_container">
+          <div class="footer_about">
+            <h3>О сайте</h3>
+            <p>Royal Road® - это дом веб-романов и фан-фикшенов! В нашем удивительном сообществе
+              вы можете найти различных талантливых людей, которые пишут как хобби или даже
+              профессионально, художников, которые создают искусство для них, и много-много
+              читателей, которые дают ценные отзывы и поощрения.
             </p>
           </div>
-          
-          <div class="attr_element">
-            <h4 class="attr_header">Персонализированные списки</h4>
-
-            <p class="attributes_p">Список новелл подобранных специально для тебя</p>
+  
+          <div class="help">
+            <div class="help_f">
+              <h3>Контакты</h3>
+              <a href="">7 707 246 20 56</a>
+              <a href="">asdfASDF1@gmail.com</a>
+            </div>  
+            
+            <div class="help_s">
+              <h3>Реклама</h3>
+                <a href="">Реклама для авторов</a>
+                <a href="">Реклама на AsDf</a>
+            </div>
+          </div>
+  
+          <div class="theme_select">
+            <h3>Тема</h3>
+            <select id="theme">
+              <option id="dark">Темная</option>
+              <option id="light">Светлая</option>
+            </select>
           </div>
         </div>
-
-        <!-- То что с перва -->
-        <div class="first_about">
-          <div class="container">
-            <img class="asdf_img" src="..\img\laptopImg.png">
-          </div>  
-          
-          <div class="read_write">
-            <span>Родина Электронных Книг</span>
-            <button id="read_now">Читать сейчас</button>
-            <button id="write_now">Писать сейчас</button>
-          </div>
-        </div>
-
-        <div class="best_for_writers">
-          <div class="container_2">
-            <img class="mobile" src="..\img\mobile.png" alt="asdf">
-          </div>
-        
-          <div class="writers_text">
-            <h2 class="writers_header">Лучшее место для писателей</h2>
-
-            <div class="text_container">
-              <h4>Пиши</h4>
-              <p>Вы можете найти бесчисленное множество инструментов для помощи в написании текстов.</p>
-            </div>
-
-            <div class="text_container">
-              <h4>Интерактируй</h4>
-              <p>Процветающее сообщество, с которым можно взаимодействовать и делиться своей работой, а 
-                также получать обратную связь и поддержку.</p>
-            </div>
-
-            <div class="text_container">
-              <h4>Рости</h4>
-              <p>Не позволяйте своей истории пылиться. Опубликуйтесь на AsDf и найдите новых 
-                читателей - сделайте первый шаг на пути к успеху.</p>
-            </div>
+  
+        <div class="footer_container">
+          <span>AsDf 2023</span>
+          <div class="policies">
+            <a href="#">Условия использования</a>
+            |
+            <a href="#">Политика конфиденциальности</a>
+            |
+            <a href="#">Использование cookies</a>
+            |
+            <a href="#">Статус</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div class="footer_container">
-        <div class="footer_about">
-          <h3>О сайте</h3>
-          <p>Royal Road® - это дом веб-романов и фан-фикшенов! В нашем удивительном сообществе
-            вы можете найти различных талантливых людей, которые пишут как хобби или даже
-            профессионально, художников, которые создают искусство для них, и много-много
-            читателей, которые дают ценные отзывы и поощрения.
-          </p>
-        </div>
-
-        <div class="help">
-          <div class="help_f">
-            <h3>Контакты</h3>
-            <a href="">7 707 246 20 56</a>
-            <a href="">asdfASDF1@gmail.com</a>
-          </div>  
-          
-          <div class="help_s">
-            <h3>Реклама</h3>
-              <a href="">Реклама для авторов</a>
-              <a href="">Реклама на AsDf</a>
-          </div>
-        </div>
-
-        <div class="theme_select">
-          <h3>Тема</h3>
-          <select id="theme">
-            <option id="dark">Темная</option>
-            <option id="light">Светлая</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="footer_container">
-        <span>AsDf 2023</span>
-        <div class="policies">
-          <a href="#">Условия использования</a>
-          |
-          <a href="#">Политика конфиденциальности</a>
-          |
-          <a href="#">Использование cookies</a>
-          |
-          <a href="#">Статус</a>
-        </div>
-      </div>
-    </div>
 
     <script src="../js/headerApp.js"></script>
 	</body>
