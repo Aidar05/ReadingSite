@@ -5,15 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
+
     <link rel="stylesheet" href="../css/browse.css">
+    <link rel="stylesheet" href="..\css\general_styles.css">
+    <link rel="stylesheet" href="..\css\main_page\header.css">
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
       
     <div id="app">
-      <button v-on:click="main_page">Назад</button>
-
-      <h2> {{ current }}: {{ title }} </h2>
+      <div id="header_bg" id="header">
+        <div class="header" id="header">
+          <span class="logo"><a href="index.html">AsDf</a></span>
+          
+          <div class="elements">
+            <a href="#about" class="menu_element">Про сайт</a>
+            <a href="#" class="menu_element">Читать</a>
+            <a href="#" class="menu_element">Каталог</a>
+            <a href="#" class="menu_element">Поиск</a>
+            <a href="#footer" class="menu_element">&#8943;</a>
+          </div>
+  
+          <div class="reg" v-if="logged_in">
+            <button class="reg_button"><a href="..\html\registration.html">{{ asdf }}</a></button>
+            <button class="reg_button" id="login_btn"><a href="..\html\sign_in.html">Войти</a></button>
+          </div>
+  
+          <div class="profile" v-else="!logged_in"></div>
+        </div>        
+      </div>
+  
+      <div class="books_container">
+        <ul class="books_list">
+          <li class="book_element" v-for="book in books">
+            <img class="preview_img" :src="book.img_path" alt="Resourse not found">
+            
+            <div class="preview_text">
+              <h2> {{book.title}} </h2>
+    
+              <p> {{book.author}} </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="recomendations">
+        <h1>Рекомендации</h1>
+        <h2> {{ current }}: {{ title }} </h2>
+      </div>
 
       <button v-on:click="previous">Предыдущая новелла</button>
       <button v-on:click="next">Следующая новелла</button>
