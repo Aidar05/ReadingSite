@@ -11,11 +11,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 	
 	<body>
-    <div id="header_bg">
-      <div class="header">
+    <div id="header_bg" id="header">
+      <div class="header" id="header">
         <span class="logo">AsDf</span>
         
         <div class="elements">
@@ -26,10 +28,12 @@
           <a href="#footer" class="menu_element">&#8943;</a>
         </div>
 
-        <div class="reg">
-          <button class="reg_button"><a href="..\html\registration.html">Регистрация</a></button>
+        <div class="reg" v-if="logged_in">
+          <button class="reg_button"><a href="..\html\registration.html">{{ asdf }}</a></button>
           <button class="reg_button" id="login_btn"><a href="..\html\sign_in.html">Войти</a></button>
         </div>
+
+        <div class="profile" v-else="!logged_in"></div>
       </div>        
     </div>
 
@@ -52,7 +56,7 @@
             я набором инструментов для поддержки авторов на их пути к успеху.
           </span>
           
-          <button class="learn_button">Browse</button>
+          <a href="browse.html"><button class="learn_button">Browse</button></a>
         </div>
         
 			</div>		
@@ -179,5 +183,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/headerApp.js"></script>
 	</body>
 </html>
