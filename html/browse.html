@@ -40,7 +40,8 @@
       <div class="top_container">
         <div class="books_container">
           <ul class="books_list">
-            <li class="book_element" v-for="book in books">
+            <li v-for="(book, index) in books" :key="index" :class="{ favNovel: book.isFav }"
+             :id="book.id" @click="changeFavState">
               <img class="preview_img" :src="book.img_path" alt="Resourse not found">
               
               <div class="preview_text">
@@ -49,12 +50,14 @@
                 <p> {{book.author}} </p>
               </div>
             </li>
+
+            <button class="changeFavState"></button>
           </ul>
         </div>
         
         <div class="recomendations">
-          <h1>Рекомендации</h1>
-          <h2> {{ current }}: {{ title }} </h2>
+          <h1 class="recs_mainHeader">Рекомендации</h1>
+          <span class="recs_content"> {{ current }}: {{ title }} </span>
         </div>
   
         <button v-on:click="previous">Предыдущая новелла</button>
@@ -111,5 +114,6 @@
     </div>
 
     <script src="../js/app.js"></script>
+    <script src="../js/headerApp.js"></script>
   </body>
 </html>
