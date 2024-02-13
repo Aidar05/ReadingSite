@@ -1,4 +1,4 @@
-# app
+# course_work
 
 ## Project setup
 ```
