@@ -1,26 +1,114 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  /* Сбрасываю стили браузера по дефолту */
+  body, h1, p, span, button{
+      margin: 0;
+      padding: 0;
+      font: inherit;
+  }
+
+  body{
+      width: 100vw;
+      font-family: 'Kaushan Script', cursive;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+      background-color: var(--bg_color);
+  }
+
+  .top_container{
+      width: 65vw;
+      margin: auto;
+      color: white
+  }
+
+
+  :root{
+    --bg_color: #000000;
+
+    --text_color: #c9d1c8;
+    --container_bg_color: #000000;
+
+    --footer_bg_color: #000000;
+    --footer_headings_color: #c9d1c8;
+    --footer_text_color: #c9d1c8;
+
+    --accent_color: #242424;
+    --call_to_action_color: #6f12a5;
+    --call_to_action_textColor: #ffffff;
+
+    --darken_lighten_intro_bg: 0, 0, 0, 0.4;
+    --darken_lighten_about_bg: 0, 0, 0, 0.3;
+    --bg_opacity: 1;
+    
+    --menu_text_size: 15px;
+    --text_size_small: 14px;
+    --text_size_primary: 16px;
+    --text_size_smallHeader: 18px;
+    --text_size_header: 22px;
+    --text_size_bigHeader: 40px;
+
+    --main_container_width: 65vw;
+  }
+
+  :root:has(#dark:checked){
+    --text_color: #c9d1c8;
+    --container_bg_color: #000000;
+    
+    --footer_bg_color: #000000;
+    --footer_headings_color: #c9d1c8;
+    --footer_text_color: #c9d1c8;
+    
+    --accent_color: #242424;
+    --call_to_action_color: #801abb;
+    --call_to_action_textColor: #ffffff;
+
+    --darken_lighten_intro_bg: 0, 0, 0, 0.4;
+    --darken_lighten_about_bg: 0, 0, 0, 0.3;
+    
+    --opacity: 0.9;
+  }
+
+  :root:has(#light:checked){
+    --bg_color: white;
+
+    --text_color: #000000;
+    --container_bg_color: #ffffff;
+    
+    --footer_bg_color: #ffffff;
+    --footer_headings_color: #000000;
+    --footer_text_color: #000000;
+    
+    --accent_color: #adadad;
+    --call_to_action_color: #a836eb;
+    --call_to_action_textColor: #ffffff;
+
+    --darken_lighten_intro_bg: 0, 0, 0, 0.4;
+    --darken_lighten_about_bg: 0, 0, 0, 0.3;
+    
+    --opacity: 0.9;
+  }
+
+  h2{
+    font-size: var(--text_size_header);
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit
+  }
 </style>
