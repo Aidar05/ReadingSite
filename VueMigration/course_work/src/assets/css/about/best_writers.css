@@ -1,0 +1,50 @@
+.best_for_writers{
+	padding: 30px;
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
+}
+
+.writers_header{
+	font-size: var(--text_size_header);
+}
+
+.container_2{
+	width: 50%;
+	display: inline-block;
+}
+
+.writers_text{
+	display: inline-block;
+	width: 40%;
+}
+
+.writers_text p{
+	font-size: var(--text_size_primary);
+}
+
+.writers_text h4{
+	font-size: var(--text_size_smallHeader);
+}
+
+.writers_text > *{
+	text-align: center;
+}
+
+.about_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: solid 1 px white;
+	font-size: var(--text_size_small);
+	opacity: .9;
+
+	padding: 20px;
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
+}
+
+.mobile{
+	width: 45%;
+	padding-left: 25%;
+	padding-bottom: 25%;
+}
