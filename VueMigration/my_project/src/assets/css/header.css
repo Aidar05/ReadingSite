@@ -40,9 +40,9 @@
 	font-size: var(--menu_text_size);
 }
 
-.menu_element{
+.reg a{
 	text-decoration: none;
-	color: var(--text_color);
+	color: inherit
 }
 
 .reg_button{

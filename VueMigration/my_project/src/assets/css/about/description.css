@@ -1,0 +1,60 @@
+.read_write{
+	width: 40%;
+	margin-left: 80px;
+}
+
+.first_about{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
+}
+
+.asdf_img{
+	width: 400px;
+	height: 400px;
+}
+
+.read_write span{
+	width: 400px;
+	font-size: var(--text_size_header);
+	font-weight: 500;
+	display: block;
+}
+
+.read_write > *{
+	height: 50px;
+	width: 140px;
+	user-select: none;
+	font-size: var(--text_size_small);
+}
+
+#read_now{
+	background-color: var(--call_to_action_color);
+	color: white;
+	border: none;
+}
+
+#write_now{
+	border: 1px solid rgb(95, 95, 95);
+	background-color: var(--container_bg_color);
+	color: var(--text_color);
+}
+
+.read_write button:hover{
+	opacity: 0.7;
+}
+
+.about_text h2{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+}
+
+.about_text span{
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+

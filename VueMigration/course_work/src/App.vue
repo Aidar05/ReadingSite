@@ -1,17 +1,17 @@
 <template>
   <Header />
 
-  <Intro/> 
-  
-  <About/>
+  <Intro />
 
-  <Footer/>
+  <About />
+
+  <Footer />
 </template>
 
 <script>
 import '@/assets/css/global.css';
-import Header from './components/Header.vue';
-import Intro from './components/Intro.vue'
+import Header from './components/Header.vue'
+import Intro from './components/Intro.vue';
 import About from './components/about_component/About.vue';
 import Footer from './components/Footer.vue';
 
@@ -20,7 +20,7 @@ export default {
 
   components: {
     Header, Intro, About, Footer
-  }
+  } 
 }
 </script>
 
