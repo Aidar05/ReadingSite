@@ -1,7 +1,10 @@
+/* Импорт Font Awesome для иконок */
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
 /* Menu */
 #header_bg{
 	width: 100vw;
-	height: 60px;
+	height: 65px;
 	background-color: var(--container_bg_color);
 	border-bottom: solid 1px var(--accent_color);
 }
@@ -11,7 +14,7 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 58vw;
-	height: 60px;
+	height: 100%;
 	margin: auto;
 	border-bottom: solid 1px var(--accent_color)
 }
@@ -32,17 +35,11 @@
 	font-size: var(--text_size_header);
 }
 
-
-.elements a{
+.menu_element{
 	text-decoration: none; 
 	color: var(--text_color);
 	text-transform: uppercase;
 	font-size: var(--menu_text_size);
-}
-
-.menu_element{
-	text-decoration: none;
-	color: var(--text_color);
 }
 
 .reg_button{
@@ -65,12 +62,38 @@
 
 .menu_element:hover,
 .reg_button:hover {
-	opacity: .6;
+	opacity: .7;
 }
 
 .profile{
-	width: 38px;
-	height: 38px;
+	display: flex;
+	align-items: center;
+	gap: 10px
+}
+
+#profile_img{
+	width: 39px;
+	height: 39px;
 	border-radius: 50%;
-	background-color: var(--accent_color);
+}
+
+.username_container{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.username_container:hover{
+	opacity: .7;
+}
+
+.username{
+	color: var(--text_color);
+	font-size: var(--menu_text_size);
+}
+
+.angle_down::before{
+	width: 15px;
+	content: "\f107";
+	color: var(--text_color);
 }
