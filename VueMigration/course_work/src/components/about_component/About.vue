@@ -6,7 +6,6 @@
 
       <Description/>
 
-      <Best_writers/>
     </div>
   </div>
 </template>
@@ -15,12 +14,11 @@
 import "../../assets/css/about/about.css"
 import Attributes from "./Attributes.vue";
 import Description from "./Description.vue";
-import Best_writers from "./Best_writers.vue"
 
 export default {
     name: 'About',
     components: { 
-      Attributes, Description, Best_writers
+      Attributes, Description
     }
 }
 
