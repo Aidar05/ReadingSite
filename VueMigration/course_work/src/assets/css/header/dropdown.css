@@ -1,0 +1,34 @@
+.dropdown_content {
+  position: absolute;
+  background-color: var(--accent_color);
+  width: 170px;
+  height: auto;
+  box-shadow: 0px 8px 16px 0px var(--accent_color);
+  z-index: 1;
+  top: 60px;
+}
+
+.dropdown_element{
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  height: 30px;
+  padding: 8px 16px;
+
+}
+
+.dropdown_element:hover{
+  background-color: var(--secondary_color);
+}
+
+.dropdown_icon::before{
+	width: 15px;
+	content: "\f107";
+	color: var(--text_color);
+  margin-right: 10px;
+}
+
+.dropdown_text{
+  font-size: var(--menu_text_size);
+	color: var(--text_color);
+}

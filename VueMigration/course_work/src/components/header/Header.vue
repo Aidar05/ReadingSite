@@ -13,29 +13,46 @@
       </div>
       
       <div class="profile" v-else>
-        <img src="../../assets/imgs/MoL.jpg" id="profile_img" alt="resourse not found" >
-        
-        <div class="username_container">
-          <span class="username">Bizarre_sorserer</span>
-
-          <i class="fas angle_down"></i>
+        <div class="visible_profile">
+          <img src="../../assets/imgs/MoL.jpg" id="profile_img" alt="resourse not found" >
+          
+          <div class="username_container" @click="toggleDropdown" >
+            <span class="username">Bizarre_sorserer</span>
+  
+            <i class="fas angle_down"></i>
+          </div>
         </div>
+
+        <DropdownMenu v-if="dropdown_visible"/>
       </div>
 
+      
     </div>        
   </div>
 </template>
 
 <script>
-import "../../assets/css/header.css"
+import "../../assets/css/header/header.css"
 import Menu from "./Menu.vue"
+import DropdownMenu from "./dropdown_menu/DropdownMenu"
 
 export default {
     name: 'Header',
+    props: ['loggedIn'],
     components: {
-      Menu
+      Menu, DropdownMenu
     }, 
-    props: ['loggedIn']
+    data() {
+      return{
+        dropdown_visible: false
+      }
+    },
+    methods: {
+      toggleDropdown: function() {
+        this.dropdown_visible = !this.dropdown_visible
+      }
+    }
+
 }
 
 </script>

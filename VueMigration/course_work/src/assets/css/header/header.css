@@ -65,7 +65,7 @@
 	opacity: .7;
 }
 
-.profile{
+.visible_profile{
 	display: flex;
 	align-items: center;
 	gap: 10px
@@ -78,9 +78,10 @@
 }
 
 .username_container{
+	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 7px;
 }
 
 .username_container:hover{
@@ -90,6 +91,7 @@
 .username{
 	color: var(--text_color);
 	font-size: var(--menu_text_size);
+	user-select: none;
 }
 
 .angle_down::before{

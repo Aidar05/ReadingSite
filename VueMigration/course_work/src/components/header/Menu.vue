@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import "../../assets/css/header.css"
+import "../../assets/css/header/header.css"
 
 export default {
     name: 'Header',
