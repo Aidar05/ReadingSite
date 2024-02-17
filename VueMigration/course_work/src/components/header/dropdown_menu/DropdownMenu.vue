@@ -1,6 +1,6 @@
 <template>
   <div class="dropdown_content">
-    <DropdownElement :elementName="my_profile"/>
+    <DropdownElement :elementName="my_profile" @click="emitModal"/>
     
     <DropdownElement :elementName="saved"/>
     
@@ -28,6 +28,11 @@ export default {
         favs: "Любимые",
         settings: "Настройки",
         log_out: "Выйти"
+      }
+    },
+    methods: {
+      emitModal(){
+        this.$emit('dropdownElementClick')
       }
     }
     

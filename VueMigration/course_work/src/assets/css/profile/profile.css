@@ -1,0 +1,17 @@
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+
+}
+
+.modal_container{
+    width: 500px;
+    aspect-ratio: 5/7;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 100px auto
+}
+

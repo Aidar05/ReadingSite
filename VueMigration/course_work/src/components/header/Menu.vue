@@ -1,10 +1,9 @@
 <template>
     <div class="elements">
-      <router-link to="#" class="menu_element">Читать</router-link>
-      <router-link to="#" class="menu_element">Про сайт</router-link>
-      <router-link to="#footer" class="menu_element">&#8943;</router-link>
+      <a link="#" class="menu_element">Читать</a>
+      <a link="#" class="menu_element">Про сайт</a>
+      <a link="#footer" class="menu_element">&#8943;</a>
     </div>
-    <router-view></router-view>
 </template>
 
 <script>

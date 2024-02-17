@@ -16,17 +16,15 @@
         <div class="visible_profile">
           <img src="../../assets/imgs/MoL.jpg" id="profile_img" alt="resourse not found" >
           
-          <div class="username_container" @click="toggleDropdown" >
+          <div class="username_container" @click="toggleMenu" >
             <span class="username">Bizarre_sorserer</span>
   
             <i class="fas angle_down"></i>
           </div>
         </div>
 
-        <DropdownMenu v-if="dropdown_visible"/>
+        <DropdownMenu v-if="dropdown_visible" @dropdownElementClick="$emit('dropdownElementClick')"/>
       </div>
-
-      
     </div>        
   </div>
 </template>
@@ -42,16 +40,31 @@ export default {
     components: {
       Menu, DropdownMenu
     }, 
+    
     data() {
       return{
         dropdown_visible: false
       }
     },
+
     methods: {
-      toggleDropdown: function() {
+      toggleMenu: function() {
         this.dropdown_visible = !this.dropdown_visible
+      },
+
+      toggleDropdown: function(e) {        
+        if (!this.$el.contains(e.target)) {
+          this.dropdown_visible = false
+        } 
       }
-    }
+    }, 
+
+    mounted() {
+      document.addEventListener('click', this.toggleDropdown);
+    },
+    beforeUnmount() {
+      document.removeEventListener('click', this.toggleDropdown);
+  }
 
 }
 
