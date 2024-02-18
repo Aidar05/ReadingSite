@@ -16,14 +16,14 @@
         <div class="visible_profile">
           <img src="../../assets/imgs/MoL.jpg" id="profile_img" alt="resourse not found" >
           
-          <div class="username_container" @click="toggleMenu" >
+          <div class="username_container" @click="toggleDropdownMenu" >
             <span class="username">Bizarre_sorserer</span>
   
             <i class="fas angle_down"></i>
           </div>
         </div>
 
-        <DropdownMenu v-if="dropdown_visible" @dropdownElementClick="$emit('dropdownElementClick')"/>
+        <DropdownMenu v-if="dropdown_visible"/>
       </div>
     </div>        
   </div>
@@ -44,11 +44,12 @@ export default {
     data() {
       return{
         dropdown_visible: false
-      }
+      } 
     },
 
     methods: {
-      toggleMenu: function() {
+      toggleDropdownMenu: function() {
+        console.log("toggleDropdownMenu")
         this.dropdown_visible = !this.dropdown_visible
       },
 

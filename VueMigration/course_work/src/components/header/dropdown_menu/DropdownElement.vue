@@ -11,5 +11,4 @@ export default{
   name: "DropdownElement",
   props: ['elementName'], 
 }
-
 </script>
