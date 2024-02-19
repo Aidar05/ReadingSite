@@ -11,6 +11,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     background-color: var(--bg_color);
+    color: var(--text_color)
 }
 
 .top_container{
@@ -86,6 +87,22 @@ body{
   --darken_lighten_about_bg: 0, 0, 0, 0.3;
   
   --opacity: 0.9;
+}
+
+.main_container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
+}
+
+.sub_container{
+  max-width: var(--main_container_width);
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
 }
 
 h2{

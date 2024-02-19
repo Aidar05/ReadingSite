@@ -1,13 +1,8 @@
 <template>
   <!-- Про сайт -->
-  <div class="main_container" id="about_container">
-    <div class="about_subcontainer" id="about">      
-      <Attributes/>
+    <Attributes/>
 
-      <Description/>
-
-    </div>
-  </div>
+    <Description/>
 </template>
 
 <script>

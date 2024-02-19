@@ -1,6 +1,6 @@
 <template>
 	<!-- То что с перва -->
-	<div class="first_about">
+	<div class="sub_container" id="first_about">
 		<div class="container">
 			<img class="asdf_img" src="../../assets/imgs/laptopImg.png">
 		</div>  

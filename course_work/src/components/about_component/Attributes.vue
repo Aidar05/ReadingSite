@@ -1,5 +1,5 @@
 <template>
-	<div class="attributes">
+	<div class="sub_container" id="attributes">
 		<div class="attr_element">
 			<h4 class="attr_header">Поиск</h4>
 

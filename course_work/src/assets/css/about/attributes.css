@@ -1,11 +1,8 @@
 /* Хорошие стороны */
-.attributes{
+#attributes{
 	display: flex;
 	align-items: center;
 	justify-content: start;
-	padding: 30px;
-	border: 1px solid var(--accent_color);
-	border-radius: 15px;
 }
 
 .attr_header{

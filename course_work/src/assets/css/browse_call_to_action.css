@@ -1,0 +1,31 @@
+#browse_novels_container{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+    width: var(--main_container_width);
+	padding: 20px;
+}
+
+.browse_novels_header{
+	margin: 0;
+}
+
+.learn_button{
+	color: var(--call_to_action_textColor);
+	background-color: var(--call_to_action_color);
+	
+	text-transform: uppercase;
+	font-size: var(--text_size_small);
+	border: 1px solid;
+	border-color: var(--accent_color);
+	height: 40px;
+	width: 160px;
+}
+
+.learn_button:hover{
+	opacity: 0.6;
+}
+
+.intro_text{
+	font-size: var(--text_size_primary);
+}
