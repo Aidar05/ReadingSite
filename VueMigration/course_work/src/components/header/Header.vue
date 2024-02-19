@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <DropdownMenu v-if="dropdown_visible"/>
+        <DropdownMenu v-if="dropdown_visible" @dropdownElementClick="$emit('dropdownElementClick')"/>
       </div>
     </div>        
   </div>
@@ -48,8 +48,11 @@ export default {
     },
 
     methods: {
+      asdf(){
+        console.log("asdf")
+      },
+
       toggleDropdownMenu: function() {
-        console.log("toggleDropdownMenu")
         this.dropdown_visible = !this.dropdown_visible
       },
 
@@ -65,8 +68,7 @@ export default {
     },
     beforeUnmount() {
       document.removeEventListener('click', this.toggleDropdown);
-  }
-
+    }
 }
 
 </script>
