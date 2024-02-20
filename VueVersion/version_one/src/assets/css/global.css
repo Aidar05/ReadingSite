@@ -6,29 +6,33 @@ body, h1, p, span, button{
 }
 
 body{
-  font-family: "Inter", sans-serif;
-  color: var(--text_color);
-  
-  background: var(--bg_color);
-  background-image: linear-gradient(var(--bg_color) .1em, transparent .1em), linear-gradient(90deg, var(--bg_color) .1em, transparent .1em);
-  background-size: 3em 3em;
-  
-  overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg_color);
+    color: var(--text_color)
+}
+
+.top_container{
+    width: 65vw;
+    margin: auto;
+    color: white
 }
 
 
 :root{
-  --bg_color: rgb(15, 15, 15);
+  --bg_color: #000000;
   --secondary_color: #111111;
 
   --text_color: #c9d1c8;
-  --container_bg_color: rgb(15, 15, 15);
+  --container_bg_color: #000000;
 
-  --footer_bg_color: rgb(15, 15, 15);
+  --footer_bg_color: #000000;
   --footer_headings_color: #c9d1c8;
   --footer_text_color: #c9d1c8;
 
-  --accent_color: #333333;
+  --accent_color: #242424;
   --call_to_action_color: #6f12a5;
   --call_to_action_textColor: #ffffff;
 
@@ -36,7 +40,8 @@ body{
   --darken_lighten_about_bg: 0, 0, 0, 0.3;
   --bg_opacity: 1;
   
-  --text_size_extraSmall: 14px;
+  --menu_text_size: 14px;
+  --text_size_extraSmall: 13px;
   --text_size_small: 14px;
   --text_size_primary: 16px;
   --text_size_smallHeader: 18px;
@@ -46,11 +51,11 @@ body{
   --main_container_width: 65vw;
 }
 
-[data-theme="dark"]{
+:root:has(#dark:checked){
   --text_color: #c9d1c8;
-  --container_bg_color: rgb(15, 15, 15);
+  --container_bg_color: #000000;
   
-  --footer_bg_color: rgb(15, 15, 15);
+  --footer_bg_color: #000000;
   --footer_headings_color: #c9d1c8;
   --footer_text_color: #c9d1c8;
   
@@ -64,19 +69,19 @@ body{
   --opacity: 0.9;
 }
 
-[data-theme="light"]{
-  --bg_color: beige;
+:root:has(#light:checked){
+  --bg_color: white;
 
-  --text_color: rgb(65, 65, 65);
-  --container_bg_color: beige;
+  --text_color: #000000;
+  --container_bg_color: #ffffff;
   
-  --footer_bg_color: beige;
+  --footer_bg_color: #ffffff;
   --footer_headings_color: #000000;
   --footer_text_color: #000000;
   
   --accent_color: #adadad;
   --call_to_action_color: #a836eb;
-  --call_to_action_textColor: beige;
+  --call_to_action_textColor: #ffffff;
 
   --darken_lighten_intro_bg: 0, 0, 0, 0.4;
   --darken_lighten_about_bg: 0, 0, 0, 0.3;
@@ -94,11 +99,14 @@ body{
   gap: 50px
 }
 
-.main_sub_container{
-  width: var(--main_container_width);
+.sub_container{
   max-width: var(--main_container_width);
-	/* border: 1px solid var(--accent_color); */
-	/* border-radius: 15px; */
+	border: 1px solid var(--accent_color);
+	border-radius: 15px;
+}
+
+h2{
+  font-size: var(--text_size_header);
 }
 
 a{

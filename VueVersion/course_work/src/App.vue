@@ -1,25 +1,19 @@
 <template>
-  <MainPage v-if="false" />
-
-  <AboutSite v-if="true"/>
+  <MainView />
 </template>
 
 <script>
-import '@/assets/css/global.css';
-import AboutSite from "@/views/AboutSite.vue"
-import MainPage from "@/views/MainPage.vue"
+import MainView from "./views/MainView.vue" 
 
 export default {
   name: 'App',
   components: {
-    AboutSite, MainPage
-  },
-  data() {
-    return{
-      logged_in: true,
-      show_modal: false,
-    }
+    MainView
   }
 }
 </script>
 
+<style>
+@import url("./assets/css/global.css");
+
+</style>

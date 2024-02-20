@@ -1,0 +1,179 @@
+@import "https://unpkg.com/open-props/easings.min.css";
+
+#header_sub_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border: none;
+  user-select: none;
+}
+
+.sided_header_subcontainer{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+#left_header_subcontainer{
+  gap: 80px;
+}
+
+#header_logo{
+  font-size: var(--text_size_header);
+}
+
+#header_logo:hover{
+  opacity: .7;
+}
+
+#menu{
+  display: flex;
+  gap: 25px;
+  font-size: var(--text_size_extraSmall);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu_element:hover,
+.reg_button:hover {
+  opacity: .7;
+}
+
+:root{
+  --icon-fill: var(--text_color);
+}
+
+#theme-toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg_color);
+  border: 1px solid var(--accent_color);
+  border-radius: 50%;
+}
+
+.sun-and-moon > :is(.moon, .sun, .sun-beams) {
+  transform-origin: center;
+}
+
+.sun-and-moon > :is(.moon, .sun) {
+  fill: var(--icon-fill);
+}
+
+.theme-toggle:is(:hover, :focus-visible) > .sun-and-moon > :is(.moon, .sun) {
+  opacity: .7;;
+}
+
+.sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill);
+  stroke-width: 2px;
+}
+
+[data-theme="dark"] .sun-and-moon > .sun {
+  transform: scale(1.75);
+}
+
+[data-theme="dark"] .sun-and-moon > .sun-beams {
+  opacity: 0;
+}
+
+[data-theme="dark"] .sun-and-moon > .moon > circle {
+  transform: translateX(-7px);
+}
+
+@supports (cx: 1) {
+  [data-theme="dark"] .sun-and-moon > .moon > circle {
+    cx: 17;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sun-and-moon > .sun {
+    transition: transform .5s var(--ease-elastic-3);
+  }
+
+  .sun-and-moon > .sun-beams {
+    transition: transform .5s var(--ease-elastic-4), opacity .5s var(--ease-3);
+  }
+
+  .sun-and-moon .moon > circle {
+    transition: transform .25s var(--ease-out-5);
+  }
+
+  @supports (cx: 1) {
+    .sun-and-moon .moon > circle {
+      transition: cx .25s var(--ease-out-5);
+    }
+  }
+
+  [data-theme="dark"] .sun-and-moon > .sun {
+    transition-timing-function: var(--ease-3);
+    transition-duration: .25s;
+    transform: scale(1.75);
+  }
+
+  [data-theme="dark"] .sun-and-moon > .sun-beams {
+    transition-duration: .15s;
+    transform: rotateZ(-25deg);
+  }
+
+  [data-theme="dark"] .sun-and-moon > .moon > circle {
+    transition-duration: .5s;
+    transition-delay: .25s;
+  }
+}
+
+#divider{
+  width: 1px;
+  height: 35px;
+  background-color: var(--text_color);
+}
+
+#reg_button{
+	text-align: center;
+	background-color: var(--call_to_action_color);
+	color: var(--call_to_action_textColor);
+	height: 30px;
+	width: 120px;
+	margin-left: 15px;
+}
+
+#reg_button * {
+  margin: 0
+}
+
+#login_btn{
+	text-align: center;
+	background-color: var(--call_to_action_color);
+	color: var(--call_to_action_textColor);
+	height: 30px;
+	width: 120px;
+	margin-left: 15px;
+}
+
+#profile_container{
+	display: flex;
+	align-items: center;
+	gap: 5px
+}
+
+#profile_container:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+#profile_img{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+.username{
+	color: var(--text_color);
+	font-size: var(--menu_text_size);
+	user-select: none;
+}
