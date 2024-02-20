@@ -65,18 +65,18 @@ body{
 }
 
 [data-theme="light"]{
-  --bg_color: beige;
+  --bg_color: rgb(228, 228, 220);
 
   --text_color: rgb(65, 65, 65);
   --container_bg_color: beige;
   
-  --footer_bg_color: beige;
+  --footer_bg_color: var(--bg_color);
   --footer_headings_color: #000000;
   --footer_text_color: #000000;
   
   --accent_color: #adadad;
   --call_to_action_color: #a836eb;
-  --call_to_action_textColor: beige;
+  --call_to_action_textColor: var(--bg_color);
 
   --darken_lighten_intro_bg: 0, 0, 0, 0.4;
   --darken_lighten_about_bg: 0, 0, 0, 0.3;
