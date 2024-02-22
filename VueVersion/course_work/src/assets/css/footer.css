@@ -2,7 +2,7 @@
 /* footer */
 #footer_container{
 	width: 100vw;
-	height: 25vh;
+	height: 16vh;
 	max-height: 35vh;
 	
   flex-direction: row;
@@ -14,14 +14,20 @@
 
   position: absolute;
   bottom: 0;
-
+  
   font-size: var(--text_size_primary);
 }
 
 #footer_sub_container{
-	display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer_element{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #copyright_year{
@@ -36,4 +42,15 @@
 
 #footer_logo{
   font-size: var(--text_size_bigHeader);
+}
+
+.footer_contacts_icon{
+  width: 20px;
+  aspect-ratio: 1 / 1;
+  padding: 5px;
+}
+
+#footer_contacts_icon:hover{
+  height: 28px;
+  width: 28px;
 }

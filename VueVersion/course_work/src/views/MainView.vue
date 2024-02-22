@@ -12,7 +12,7 @@ import Header from "../components/Header.vue"
 import Landing from "../components/Landing.vue"
 
 export default {
-  name: 'App',
+  name: 'MainView',
   components: {
     Header, Landing, Footer
   }

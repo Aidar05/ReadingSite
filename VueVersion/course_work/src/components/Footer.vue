@@ -11,8 +11,12 @@
         <span id="footer_logo">LOGO</span>
       </div>
       
-      <div class="footer_element">        
-        <span>Контактные иконки здесь</span>
+      <div class="footer_element" id="contacts">        
+				<img class="footer_contacts_icon" id="whatsapp-icon-footer" src="../assets/imgs/whatsapp.png" alt="resource not found">
+				
+				<img class="footer_contacts_icon" src="../assets/imgs/telegram-logo.png" alt="resource not found">
+				
+        <img class="footer_contacts_icon" id="gmail-img" src="../assets/imgs/gmail.jpg" alt="resource not found">
       </div>
     </div>
 	</div>
